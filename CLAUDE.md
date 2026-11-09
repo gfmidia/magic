@@ -4,7 +4,7 @@
 
 O objetivo deste repositório (`magic`) é criar vídeos curtos (short-form) de forma rápida. A base é o **Concat**, um editor de vídeo desktop/mobile em **Rust** que fica em [Concat/](Concat/).
 
-- `Concat/` é um **repositório git próprio** (origin `github.com/jub0t/Concat`), não rastreado pelo repo `magic`. Commits no Concat são feitos dentro dessa pasta.
+- `Concat/` faz parte deste repositório: o `magic` (origin `github.com/gfmidia/magic`) rastreia todos os arquivos do Concat diretamente, sem repositório aninhado. Commits e pushes são feitos a partir da raiz do `magic`.
 - Stack: Rust 1.93.1 (edition 2024), UI em **Slint** (renderizador Skia), composição de vídeo na GPU com **wgpu**, mídia via **FFmpeg 7+** linkado (nada é chamado como processo externo), transcrição com **whisper.cpp**, TTS, e **ONNX Runtime** para recorte de fundo.
 - Licença AGPL-3.0-or-later, com CLA ([Concat/CLA.md](Concat/CLA.md)).
 - Documentação de referência do próprio projeto: [Concat/src/README.md](Concat/src/README.md) (arquitetura, comandos, API) e [Concat/CONTRIBUTING.md](Concat/CONTRIBUTING.md). Cada crate começa com um bloco `//!` em `src/lib.rs` explicando o que faz.
